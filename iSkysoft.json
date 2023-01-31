@@ -1,0 +1,68 @@
+{
+    "program":"iSkySoft",
+    "title":"iSkysoft Video Converter Ultimate",
+    "defaultWidth":1749,
+    "defaultHeight":1024,
+    "actions": [
+        {
+          "actionName": "Download Menu",
+          "actionType": "click",
+          "x": 730,
+          "y": 75
+        },
+        {
+          "actionName": "Paste URL Arrow",
+          "actionType": "click",
+          "x": 195,
+          "y": 200
+        },
+        {
+          "actionName": "Multiple URLs",
+          "actionType": "click",
+          "x": 150,
+          "y": 335
+        },
+        {
+          "actionName": "Copy URLs",
+          "actionType": "file_copy",
+          "path": "C:\\Users\\leetc\\Desktop\\songurls.txt"
+        },
+        {
+          "actionName": "Paste",
+          "actionType": "paste"
+        },
+        {
+          "actionName": "Download Button",
+          "actionType": "click",
+          "x": 390,
+          "y": 330
+        },
+        {
+          "actionName": "Download Wait",
+          "actionType": "wait_image_check",
+          "waitDelay": 5000,
+          "maxTries": 5,
+          "success": 0,
+          "fail": 0,
+          "imageSearchInfo": {
+            "x1": 624,
+            "y1": 424,
+            "x2": 1100,
+            "y2": 735,
+            "imageFile": "*3 C:\\Users\\leetc\\Desktop\\Coding Workspace\\Autohotkey Programs\\skysoft_download_complete.PNG"
+          }
+        }
+      ],
+    "tasks":{
+      "Download Youtube Music List":["Copy URLs","Download Menu","Paste URL Arrow","Multiple URLs","Paste","Download Button", "Download Wait"]
+    },
+    "targets":{
+      "Top Bar": {
+        "Convert": {"x1": 1, "y1": 2, "x2": 2, "y2": 3},
+        "Download": {"x": 1, "y": 2},
+        "Burn": {"x": 1, "y": 2},
+        "Transfer": {"x": 1, "y": 2},
+        "Toolbox": {"x": 1, "y": 2}
+      }
+    }
+}
